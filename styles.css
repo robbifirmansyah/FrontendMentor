@@ -1,0 +1,149 @@
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Manrope;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 1000px;
+    overflow: hidden;
+    height: 350px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.card p {
+    color: hsl(217, 19%, 35%);
+}
+
+#share_icon {
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-image: url(images/icon-share.svg);
+    mask-image: url(images/icon-share.svg);
+    background-color: hsl(217, 19%, 35%);
+    width: 25px !important;
+    height: 20px !important;
+    display: block;
+    margin: 5px 5px 10px 5px;
+}
+
+.share_icon {
+    background-color: hsl(212, 23%, 69%);
+    border-radius: 100%;
+}
+
+.share {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.share .img,
+.share>.img>img {
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+    border-radius: 100%;
+}
+
+.share.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.share>.text>* {
+    margin: 5px;
+}
+
+.share .icon {
+    margin-left: auto;
+    margin-right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.share .icon img {
+    width: 30px;
+    object-fit: cover;
+    object-position: center center;
+    cursor: pointer;
+}
+
+.share .icon .option {
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+    margin-left: -100px;
+    column-gap: 10px;
+    border-radius: 10px;
+}
+
+.image>img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.title,
+.description {
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        margin: 0 25px 25px 25px;
+    }
+
+    .container {
+        width: 350px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .share {
+        height: auto;
+    }
+
+    .share img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .share>.text>* {
+        margin: 5px !important;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
